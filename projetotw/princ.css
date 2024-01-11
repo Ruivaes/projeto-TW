@@ -1,0 +1,36 @@
+body{
+    background-image: url(img/Galeria.png);
+    background-size: cover;
+    overflow: hidden;
+    font-family: Verdana;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 25px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 18px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(92, 91, 91);
+    padding: 14px ;
+  }
+  
+  .active {
+    background-color: rgb(92, 91, 91);
+  }
