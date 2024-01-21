@@ -1,22 +1,31 @@
+
 body{
     background-image: url(img/Galeria.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
     font-family: Verdana;
-}
+  }
 
-ul {
+
+  ul {
+   
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
     border-radius: 25px;
+    text-align: center;
   }
+
+  li{
+    display: inline-block;
+  }
+
   
-  li {
-    float: left;
-  }
   
   li a {
     display: block;
@@ -26,11 +35,30 @@ ul {
     text-decoration: none;
   }
   
+
+  li a {
+    transition: padding 0.4s ease-in-out;
+  }
+  
   li a:hover:not(.active) {
     background-color: rgb(92, 91, 91);
-    padding: 14px ;
+    padding: 13px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
   }
   
   .active {
     background-color: rgb(92, 91, 91);
   }
+
+    /* Define o estilo para o logo */
+    #logo {
+      max-width: 100% !important;
+      max-height: 100% !important;
+    display: block;
+    margin: 1% auto;
+    width: 40%;
+  }
+
+  @media screen and (max-width: 767px) {
+ 
+}
